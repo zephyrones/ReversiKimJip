@@ -41,16 +41,22 @@ private void tekenSpeelbord(object o, PaintEventArgs pea)
         }
     }
 
+
+   /* Hey girlies, jullie waren bezig met het op de goede plaats krijgen van de steentjes op het spelbord.
+    * Een globaal idee is dat we variabelen berekenen afhankelijk van waar je klikt.
+    * Dan kijken we hoe vaak het in 50 past (aka onze vakjes) en dan max n*50 (en niet in de min) 
+    */
+
     public void tekenSteenB(object o, PaintEventArgs pea)
     {
         Graphics gr = pea.Graphics;
-        gr.FillEllipse(Brushes.Blue, 20, 20, 50, 50);
+        gr.FillEllipse(Brushes.Blue, xB, yB, 50, 50);
     }
 
     public void tekenSteenR(object o, PaintEventArgs pea)
     {
         Graphics gr = pea.Graphics;
-        gr.FillEllipse(Brushes.Red, 40, 20, 50, 50);
+        gr.FillEllipse(Brushes.Red, xR, yR, 50, 50);
     }
 }
 
